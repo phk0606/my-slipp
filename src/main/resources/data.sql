@@ -1,1 +1,2 @@
 insert into user (user_id, password, name, email) values ('javajigi', '2222','자바지기', 'abc@abc.com')
+insert into user (user_id, password, name, email) values ('sanjigi', '2222','산지기', 'sanjigi@abc.com')
