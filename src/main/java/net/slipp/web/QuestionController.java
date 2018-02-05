@@ -26,7 +26,7 @@ public class QuestionController {
 	@GetMapping("/form")
 	public String form(HttpSession session) {
 		if(!HttpSessionUtils.isLoginUser(session)) {
-			return "users/loginForm";
+			return "/users/loginForm";
 		}
 		return "/qna/form";
 	}
@@ -53,7 +53,7 @@ public class QuestionController {
 	public String updateForm(@PathVariable Long id, Model model, HttpSession session) {
 		System.out.println("1");
 		if(!HttpSessionUtils.isLoginUser(session)) {
-			return "users/loginForm";
+			return "/users/loginForm";
 		}
 		System.out.println("2");
 		User loginUser = HttpSessionUtils.getUserFromSession(session);		
